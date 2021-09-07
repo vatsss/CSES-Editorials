@@ -27,7 +27,7 @@ void solve(){
         st.insert(x);
     }
     cout<<st.size()<<nl;
-    /*This is a TLEd since unorderd_set operations can go upto O(n) in worst case*/  
+    /*This is a TLEd solution since unorderd_set operations can have O(n) time complexity in worst case and set operations have O(logn) time complexity.*/  
 }
 
 int main(){
