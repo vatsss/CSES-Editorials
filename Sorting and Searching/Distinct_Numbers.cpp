@@ -17,6 +17,8 @@ typedef unsigned long long ull;
 typedef long double lld;
 
 void solve(){
+     /*LOGIC - we only need to count how many unique keys(numbers) are present in the array.we can use the set/unordered_set(contained in C++ STL library),since they
+     only store unique keys.*/
     int n;
     cin>>n;
     unordered_set<int> st;
@@ -25,6 +27,7 @@ void solve(){
         st.insert(x);
     }
     cout<<st.size()<<nl;
+    /*This is a TLEd since unorderd_set operations can go upto O(n) in worst case*/  
 }
 
 int main(){
